@@ -1,0 +1,66 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "LimpezaMac-arm64-apple-macosx-release.exe": ["<LimpezaMac-arm64-apple-macosx-release.exe>"]
+  "LimpezaMac-arm64-apple-macosx-release.module": ["<LimpezaMac-arm64-apple-macosx-release.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<LimpezaMac-arm64-apple-macosx-release.exe>","<LimpezaMac-arm64-apple-macosx-release.module>"]
+  "test": ["<LimpezaMac-arm64-apple-macosx-release.exe>","<LimpezaMac-arm64-apple-macosx-release.module>"]
+default: "main"
+nodes:
+  "/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/LimpezaMacApp.swift","/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/Models/CleanupModels.swift","/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/Services/DiskScanner.swift","/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/Services/RootCleaner.swift","/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/ViewModels/CleanerViewModel.swift","/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/Views/ContentView.swift","/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/Views/Sheets.swift"]
+    outputs: ["/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/sources"]
+    description: "Write auxiliary file /Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/sources"
+
+  "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/CleanerViewModel.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/CleanupModels.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/ContentView.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/DiskScanner.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/LimpezaMacApp.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/RootCleaner.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/Sheets.swift.o"]
+    outputs: ["/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.product/Objects.LinkFileList"
+
+  "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<LimpezaMac-arm64-apple-macosx-release.exe>":
+    tool: phony
+    inputs: ["/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac"]
+    outputs: ["<LimpezaMac-arm64-apple-macosx-release.exe>"]
+
+  "<LimpezaMac-arm64-apple-macosx-release.module>":
+    tool: phony
+    inputs: ["/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/LimpezaMacApp.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/CleanupModels.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/DiskScanner.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/RootCleaner.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/CleanerViewModel.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/ContentView.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/Sheets.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/Modules/LimpezaMac.swiftmodule"]
+    outputs: ["<LimpezaMac-arm64-apple-macosx-release.module>"]
+
+  "C.LimpezaMac-arm64-apple-macosx-release.exe":
+    tool: shell
+    inputs: ["/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/CleanerViewModel.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/CleanupModels.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/ContentView.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/DiskScanner.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/LimpezaMacApp.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/RootCleaner.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/Sheets.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.product/Objects.LinkFileList"]
+    outputs: ["/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac"]
+    description: "Linking ./.build/arm64-apple-macosx/release/LimpezaMac"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-L","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release","-o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac","-module-name","LimpezaMac","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-dead_strip","-Xlinker","-alias","-Xlinker","_LimpezaMac_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g"]
+
+  "C.LimpezaMac-arm64-apple-macosx-release.module":
+    tool: shell
+    inputs: ["/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/LimpezaMacApp.swift","/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/Models/CleanupModels.swift","/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/Services/DiskScanner.swift","/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/Services/RootCleaner.swift","/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/ViewModels/CleanerViewModel.swift","/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/Views/ContentView.swift","/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/Views/Sheets.swift","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/sources"]
+    outputs: ["/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/LimpezaMacApp.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/CleanupModels.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/DiskScanner.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/RootCleaner.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/CleanerViewModel.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/ContentView.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/Sheets.swift.o","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/Modules/LimpezaMac.swiftmodule"]
+    description: "Compiling Swift Module 'LimpezaMac' (7 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","LimpezaMac","-emit-dependencies","-emit-module","-emit-module-path","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/Modules/LimpezaMac.swiftmodule","-output-file-map","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/output-file-map.json","-whole-module-optimization","-num-threads","10","-c","@/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/sources","-I","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/Modules","-target","arm64-apple-macosx14.0","-whole-module-optimization","-num-threads","10","-serialize-diagnostics","-O","-j10","-DSWIFT_PACKAGE","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","LimpezaMac_main","-swift-version","6","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","limpezamac"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/","/Users/luirdi/Github/limpezaMac/Package.swift","/Users/luirdi/Github/limpezaMac/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

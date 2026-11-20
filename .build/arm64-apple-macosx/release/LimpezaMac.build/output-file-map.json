@@ -1,0 +1,49 @@
+{
+  "": {
+    "dependencies": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/LimpezaMac.d",
+    "object": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/LimpezaMac.o",
+    "swift-dependencies": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/primary.swiftdeps"
+  },
+  "/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/LimpezaMacApp.swift": {
+    "object": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/LimpezaMacApp.swift.o",
+    "swiftmodule": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/LimpezaMacApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/LimpezaMacApp.swiftdeps",
+    "diagnostics": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/LimpezaMacApp.dia"
+  },
+  "/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/Models/CleanupModels.swift": {
+    "object": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/CleanupModels.swift.o",
+    "swiftmodule": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/CleanupModels~partial.swiftmodule",
+    "swift-dependencies": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/CleanupModels.swiftdeps",
+    "diagnostics": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/CleanupModels.dia"
+  },
+  "/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/Services/DiskScanner.swift": {
+    "object": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/DiskScanner.swift.o",
+    "swiftmodule": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/DiskScanner~partial.swiftmodule",
+    "swift-dependencies": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/DiskScanner.swiftdeps",
+    "diagnostics": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/DiskScanner.dia"
+  },
+  "/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/Services/RootCleaner.swift": {
+    "object": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/RootCleaner.swift.o",
+    "swiftmodule": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/RootCleaner~partial.swiftmodule",
+    "swift-dependencies": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/RootCleaner.swiftdeps",
+    "diagnostics": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/RootCleaner.dia"
+  },
+  "/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/ViewModels/CleanerViewModel.swift": {
+    "object": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/CleanerViewModel.swift.o",
+    "swiftmodule": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/CleanerViewModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/CleanerViewModel.swiftdeps",
+    "diagnostics": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/CleanerViewModel.dia"
+  },
+  "/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/Views/ContentView.swift": {
+    "object": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/ContentView.swift.o",
+    "swiftmodule": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/ContentView.swiftdeps",
+    "diagnostics": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/ContentView.dia"
+  },
+  "/Users/luirdi/Github/limpezaMac/Sources/LimpezaMac/Views/Sheets.swift": {
+    "object": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/Sheets.swift.o",
+    "swiftmodule": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/Sheets~partial.swiftmodule",
+    "swift-dependencies": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/Sheets.swiftdeps",
+    "diagnostics": "/Users/luirdi/Github/limpezaMac/.build/arm64-apple-macosx/release/LimpezaMac.build/Sheets.dia"
+  }
+}
